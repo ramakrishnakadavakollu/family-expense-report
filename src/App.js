@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import Routes instead of Switch
+import Navbar from './Navbar';
+import HomePage from './HomePage';
+import RegistrationPage from './RegistrationPage';
+import LoginPage from './LoginPage';
+import AddExpensePage from './AddExpensePage';
+import EditExpensePage from './EditExpensePage';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Navbar />
+        <Routes> {/* Use Routes instead of Switch */}
+          <Route path="/" element={<HomePage />} />
+          <Route path="/registration" element={<RegistrationPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/addexpense" element={<AddExpensePage />} />
+          <Route path="/editexpense" element={<EditExpensePage />} />
+        </Routes>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

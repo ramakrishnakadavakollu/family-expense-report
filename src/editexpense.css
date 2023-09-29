@@ -1,0 +1,55 @@
+/* editexpense.css */
+
+.edit-expense-container {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .edit-expense-heading {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .edit-expense-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .edit-expense-input {
+    margin-bottom: 15px;
+  }
+  
+  .edit-expense-input label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .edit-expense-input input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .edit-expense-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .edit-expense-button:hover {
+    background-color: #0056b3;
+  }
+  
